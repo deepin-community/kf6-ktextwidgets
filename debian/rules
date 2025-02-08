@@ -1,4 +1,13 @@
 #!/usr/bin/make -f
+# -*- makefile -*-
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 
 %:
 	dh $@
+
+override_dh_auto_configure:
+	dh_auto_configure -- -DBUILD_QCH=ON -DBUILD_DESIGNERPLUGIN=ON
+
+override_dh_auto_test:
+	xvfb-run -a --server-args="-screen 0 1024x768x24" dh_auto_test --no-parallel

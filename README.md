@@ -1,1 +1,9 @@
-# template-repository
+# KTextWidgets
+
+Text editing widgets
+
+## Introduction
+
+KTextWidgets provides widgets for displaying and editing text. It supports
+rich text as well as plain text.
+

@@ -1,0 +1,4 @@
+usr/include/KF6/KTextWidgets/
+usr/lib/*/cmake/KF6TextWidgets/
+usr/lib/*/libKF6TextWidgets.so
+usr/lib/*/qt6/plugins/designer/ktextwidgets6widgets.so
